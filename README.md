@@ -1,27 +1,16 @@
-# A11yP2
+# **Curso de Angular: Avançando no design de componentes com acessibilidade**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
+Instrutor:  Flavio Henrique de Souza Almeida
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Informações do Curso
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Anotações
 
-## Build
+### Aula 1
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Não utilizaremos o componente `ModalComponent` através da sua forma declarativa `app-modal`. O componente será criado dinamicamente através do serviço `ModalService` que será o responsável em inserir o componente na `view`.
+- O método open de `ModalService` é o responsável pela criação de `ModalComponent`. Seu retorno será um `ModalRef`, uma referência para o componente criado que permite o desenvolvedor fechá-lo. Uma instância de `ModalRef` possui apenas o método close.
